@@ -1,0 +1,240 @@
+.SideNavi
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.SideNavi a 
+{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.SideNavi a:hover
+{
+    color: #f1f1f1;
+}
+
+.SideNavi .closeBut 
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .SideNavi {padding-top: 15px;}
+    .SideNavi a {font-size: 18px;}
+  }
+
+
+.dropdown-container 
+{
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+ .drop {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-family: LemonMilk;
+  }
+
+.drop:hover
+{
+    color: #f1f1f1;
+}
+
+.Container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+    font-family: LemonMilk;
+  }
+
+.caret {
+    float: right;
+    padding-right: 8px;
+  }
+
+  .active {
+    background-color: white;
+    color: Black;
+  }
+  
+  .main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+  
+  img.logos
+  {
+    height: 40px;
+  }
+
+
+  body{background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('PH.jpg');}
+  body{height: 1000px;}
+  body{background-position: center;}
+  body{background-repeat: no-repeat;}
+  body{background-size: cover;}
+  body{background-blend-mode: darken;}
+
+ h1.center
+ {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%) translateY(-50%);
+  font-size: 100px;
+  font-family: LemonMilk;
+ }
+
+  @font-face {
+    font-family: LemonMilk;
+    src: url('LEMONMILK-Regular.otf');
+  }
+
+.top
+{
+  margin: 0;
+  padding: 0;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%) translateY(-50%);
+  color: white;
+  position: absolute;
+  font-family: LemonMilk;
+  font-size: 50px;
+}
+
+
+.active, .dot1:hover, .dot2:hover, .dot3:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+img.icon
+{
+  height: 20px;
+  width: 20px;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form
+{
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password]
+{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover
+{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.cancelbtn
+{
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer
+{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar
+{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container
+{
+    padding: 16px;
+}
+
+span.psw
+{
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) 
+{
+    span.psw
+    {
+        display: block;
+        float: none;
+    }
+    .cancelbtn
+    {
+        width: 100%;
+    }
+}
