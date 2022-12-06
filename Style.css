@@ -174,133 +174,6 @@
   font-size: 50px;
 }
 
-* {box-sizing:border-box}
-
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%) translateY(-50%);
-}
-
-.mySlides {
-  display: none;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-  background-color: #111;
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.numbertext {
-  color: black;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-.dot1 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 65%;
-  right: 50.5%;
-  transform: translate(-50%) translateY(-50%);
-}
-
-.dot2 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 65%;
-  transform: translate(-50%) translateY(-50%);
-}
-
-.dot3 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 65%;
-  left: 51.3%;
-  transform: translate(-50%) translateY(-50%);
-}
-
-.active, .dot1:hover, .dot2:hover, .dot3:hover {
-  background-color: #717171;
-}
-
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
 img.icon
 {
   height: 20px;
@@ -311,4 +184,80 @@ img.icon
 {
     margin-left: 400px;
     margin-right: auto;
+}
+
+
+/* The navigation menu */
+.navbar {
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background-color: #111;
+  width: 100%;
+  background: black;
+  z-index: 9999999;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  bottom: 100%;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  bottom:  100%;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
